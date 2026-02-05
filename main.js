@@ -79,7 +79,7 @@ createBackgroundStars();
 /* ============================================================== 
    4️⃣ GALÁXIA – estrelas que realmente se movem
    ============================================================== */
-const maxStars = devicePixelRatio > 1.5 ? 100000 : 300000;
+const maxStars = devicePixelRatio > 1.5 ? 30000 : 300000;
 const STAR_COUNT = maxStars; // ajuste dinâmico baseado no dispositivo
 document.getElementById('count').textContent = STAR_COUNT.toLocaleString();
 let positions = new Float32Array(STAR_COUNT * 3);
