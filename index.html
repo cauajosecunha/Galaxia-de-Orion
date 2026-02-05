@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Galáxia Realista em Three.js — Simulação de estrelas em órbita ao redor de um buraco negro.">
+    <title>CJC DEV // GALÁXIA REALISTA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="loading" aria-live="polite">GERANDO GALÁXIA…</div>
+    <div id="interface">
+        <h1>CJC DEV // ORION</h1>
+        <div class="data">ESTRELAS: <span id="count">0</span></div>
+        <div class="data">CÂMERA: <span id="camera-coords">0, 0, 0</span></div>
+    </div>
+
+    <!-- ES‑module‑shims -->
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"
+        crossorigin="anonymous"></script>
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.skypack.dev/three@0.136.0",
+            "three/examples/jsm/": "https://cdn.skypack.dev/three@0.136.0/examples/jsm/"
+        }
+    }
+    </script>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>

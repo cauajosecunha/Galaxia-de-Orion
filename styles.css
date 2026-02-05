@@ -1,0 +1,84 @@
+/* Estilos principais da página */
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background: #000;
+    font-family: 'Courier New', monospace;
+}
+
+canvas {
+    display: block;
+}
+
+/* Interface de informações (contadores, coordenadas) */
+#interface {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    color: rgba(255, 255, 255, .5);
+    pointer-events: none;
+    z-index: 10;
+}
+
+/* Título */
+h1 {
+    font-size: 14px;
+    letter-spacing: 4px;
+    margin: 0 0 10px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* Dados de estrelas e câmera */
+.data {
+    font-size: 10px;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+/* Texto de carregamento */
+#loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    letter-spacing: 5px;
+    font-size: 12px;
+    animation: pulse 1s infinite;
+    z-index: 99;
+}
+
+/* Animação do loading */
+@keyframes pulse {
+    0% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    #interface {
+        bottom: 20px;
+        left: 20px;
+        font-size: 0.8rem;
+    }
+
+    h1 {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    .data {
+        font-size: 8px;
+    }
+
+    #loading {
+        font-size: 10px;
+    }
+}
